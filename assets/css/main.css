@@ -3956,7 +3956,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 /* Banner Logo */
 .banner-logo {
-    width: 400px;      /* Change to 350px or 450px if desired */
+    width: 350px;      /* Change to 350px or 450px if desired */
     max-width: 90%;
     height: auto;
     display: block;
