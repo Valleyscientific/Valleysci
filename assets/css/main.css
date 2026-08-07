@@ -3954,14 +3954,7 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-/* Banner Logo */
-.banner-logo {
-    width: 350px;      /* Change to 350px or 450px if desired */
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto 2em auto;
-}
+			
 			#footer {
 				padding: 3em 2em 1em 2em ;
 			}
