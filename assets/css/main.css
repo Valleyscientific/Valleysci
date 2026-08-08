@@ -3997,3 +3997,35 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+/* Contact Section */
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-photo img {
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,.25);
+    box-shadow: 0 10px 25px rgba(0,0,0,.4);
+}
+
+.contact-info {
+    color: #fff;
+    max-width: 450px;
+}
+
+.contact-info h2,
+.contact-info p {
+    color: #fff;
+}
+
+.contact-info .actions {
+    margin-top: 2em;
+}
