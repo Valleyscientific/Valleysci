@@ -4061,8 +4061,11 @@ input, select, textarea {
 }
 
 /* =========================================
-   SERVICES PAGE
+   VALLEY SCIENTIFIC SERVICES PAGE
 ========================================= */
+
+
+/* SERVICE GRID */
 
 .service-grid {
     display: grid;
@@ -4071,71 +4074,226 @@ input, select, textarea {
     margin-top: 3em;
 }
 
+
+/* SERVICE CARD */
+
 .service-card {
-    background-image: url("../../images/banner.jpg");
+    position: relative;
+    min-height: 380px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* DARK OVERLAY */
+
+.service-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.72);
+
+    z-index: 1;
+}
+
+
+/* CONTENT */
+
+.service-content {
+    position: relative;
+
+    z-index: 2;
+
     padding: 2.5em;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    min-height: 350px;
+
+    color: white;
 }
 
-.service-card .icon {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
 
-.service-card h3 {
+.service-content h3 {
+    color: white;
+
+    font-size: 1.5em;
+
     margin-bottom: 1em;
-    font-size: 1.4em;
 }
 
-.service-card ul {
-    margin: 0;
+
+.service-content p,
+.service-content li {
+    color: white;
+}
+
+
+.service-content ul {
     padding-left: 1.2em;
 }
 
-.service-card li {
+
+.service-content li {
     margin-bottom: 0.6em;
 }
 
 
-/* Specialized Areas */
+.service-content .icon {
+    font-size: 2.2em;
+
+    margin-bottom: 0.6em;
+}
+
+
+/* =========================================
+   BACKGROUND IMAGES
+========================================= */
+
+
+/* Case Review */
+
+.case-review {
+    background-image:
+        url("../images/services-bg.jpg");
+}
+
+
+/* Alcohol Analysis */
+
+.alcohol-analysis {
+    background-image:
+        url("../images/services-bg.jpg");
+}
+
+
+/* Drug Analysis */
+
+.drug-analysis {
+    background-image:
+        url("../images/services-bg.jpg");
+}
+
+
+/* Laboratory Review */
+
+.laboratory-review {
+    background-image:
+        url("../images/services-bg.jpg");
+}
+
+
+/* Discovery */
+
+.discovery-review {
+    background-image:
+        url("../images/services-bg.jpg");
+}
+
+
+/* Expert Reports */
+
+.expert-reports {
+    background-image:
+        url("../images/services-bg.jpg");
+}
+
+
+/* Attorney Support */
+
+.attorney-support {
+    background-image:
+        url("../images/services-bg.jpg");
+}
+
+
+/* Expert Witness */
+
+.expert-witness {
+    background-image:
+        url("../images/services-bg.jpg");
+}
+
+
+/* =========================================
+   SPECIALIZED AREAS
+========================================= */
 
 .specialized-services {
     margin-top: 5em;
 }
 
+
 .specialized-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 1em;
+
     margin-top: 2em;
 }
 
+
 .specialized-grid div {
     padding: 1em;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.2);
 }
+
 
 .specialized-grid .icon {
     margin-right: 0.5em;
 }
 
 
-/* CTA */
+/* =========================================
+   COURTROOM EXPERIENCE
+========================================= */
+
+.credentials {
+    margin-top: 5em;
+
+    text-align: center;
+}
+
+
+.credentials p {
+    max-width: 800px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================
+   CONTACT CTA
+========================================= */
 
 .services-cta {
     text-align: center;
+
     margin-top: 5em;
+
     padding: 4em 2em;
 }
+
 
 .services-cta h2 {
     margin-bottom: 0.5em;
 }
 
 
-/* Mobile */
+/* =========================================
+   MOBILE
+========================================= */
 
 @media screen and (max-width: 980px) {
 
@@ -4143,11 +4301,13 @@ input, select, textarea {
         grid-template-columns: 1fr;
     }
 
+
     .specialized-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
+
 
 @media screen and (max-width: 736px) {
 
@@ -4155,10 +4315,16 @@ input, select, textarea {
         grid-template-columns: 1fr;
     }
 
+
     .service-card {
-        padding: 2em 1.5em;
         min-height: auto;
     }
+
+
+    .service-content {
+        padding: 2em 1.5em;
+    }
+
 
     .specialized-grid {
         grid-template-columns: 1fr;
