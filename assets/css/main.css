@@ -4072,7 +4072,7 @@ input, select, textarea {
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.05);
+    background-image: url("../../images/banner.jpg");
     padding: 2.5em;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.15);
